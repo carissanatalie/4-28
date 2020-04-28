@@ -1,0 +1,74 @@
+/*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  border: solid 1px red;*/
+}
+body{
+  position: absolute;
+}
+.heart{
+  position: 100px;
+  height: 100px;
+  margin: 35%;
+}
+.h1{
+  height:50px;
+  width:50px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 50%;
+  background-color: #f88;
+}
+.h2 {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 0px;
+  left: 40px;
+  border-radius: 50%;
+  background-color: #7FDFF5;
+}
+.h3 {
+  height: 49px;
+  width:49px;
+  position: absolute;
+  top: 21px;
+  left: 21px;
+  transform: rotate(45deg);
+  background-color:#f88;
+}
+.heart{
+  position: relative;
+  bottom: 100px;
+  left: 100px;
+  width: 50px;
+  height: 50px;
+  transition: all 2s cubic-bezier(0.68, -0.6, 0.32, 1.6) 0.6s;
+  animation-name: boxmove;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.heart:hover{
+  transform: rotate(500deg);
+  margin-top: 0px;
+}
+.h1{
+  height:50px;
+  width:50px;
+}
+@keyframes boxmove {
+  0% {
+    left: 100px;
+  }
+  25% {
+  }
+  50% {
+    transform: scale(2.25) rotate(-350deg);
+  }
+  100% {
+    left: 300px;
+  }
+}
